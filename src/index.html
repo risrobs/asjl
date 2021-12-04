@@ -14,6 +14,19 @@
     <form id="payment-form">
       <div id="payment-element">
         <!--Stripe.js injects the Payment Element-->
+        <label for="ccname">Name on card</label>
+<input name="ccname" type="text"   autocomplete="input"> 
+
+
+<label for="cardnumber">Card Number</label>
+<input name="cardnumber" type="number"  required autocomplete="input">
+
+
+<label for="cc-exp">Expiry</label>
+<input name="cc-exp" type="number"  required placeholder="MM-YYYY" autocomplete="input">
+
+<label for="cvc">CVC</label>
+<input name="cvc" type="number"  required autocomplete="input">
       </div>
       <button id="submit">
         <div class="spinner hidden" id="spinner"></div>
